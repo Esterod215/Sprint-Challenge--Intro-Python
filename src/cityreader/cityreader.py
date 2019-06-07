@@ -31,7 +31,7 @@ city_list = open("cities.csv").readlines()[1:]
 def cityreader(cities=[]):
   for line in city_list:
     words = line.split(',')
-    cities.append(City(words[0],words[3],words[4]))
+    cities.append(City(words[0],float(words[3]),float(words[4])))
   
   
   return cities
